@@ -7,6 +7,7 @@ class ThreeScene extends Component {
     scene = new THREE.Scene();
     renderer = new THREE.WebGLRenderer();
 
+
     componentDidMount() {
         this.updateThree(this.props);
 

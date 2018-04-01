@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 class PerspectiveCamera extends Component {
     constructor(props) {
         super(props);
-
         this.updateThree(props);
     }
     componentDidUpdate() {
@@ -17,9 +16,12 @@ class PerspectiveCamera extends Component {
         const { fov, aspect, near, far, position } = this.props;
 
         this.camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
+
         this.camera.position.x = position.x;
         this.camera.position.y = position.y;
         this.camera.position.z = position.z;
+
+        this.camera.lookAt(0, 0, 0)
     }
 
     componentDidMount() {
