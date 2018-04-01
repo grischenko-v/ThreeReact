@@ -9,6 +9,11 @@ class Cube extends Component {
         this.cube = new THREE.Mesh(this.geometry, this.material);
 
         this.context.scene.add(this.cube);
+
+        var geo = new THREE.EdgesGeometry( this.cube.geometry ); // or WireframeGeometry
+        var mat = new THREE.LineBasicMaterial( { color: 0xffffff, linewidth: 4 } );
+        var wireframe = new THREE.LineSegments( geo, mat );
+        this.cube.add( wireframe );
     }
 
     componentDidUpdate() {
