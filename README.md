@@ -4,7 +4,7 @@
 </p>
 ##
 ## [Simple Example](https://grischenko-v.github.io/ThreeReact/build/)
-##   
+##
 ## React JS + ThreeJS (Technologies):
 - create-react-app
 - threejs
