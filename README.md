@@ -1,6 +1,8 @@
 ##
-![screenshot of sample](https://raw.githubusercontent.com/grischenko-v/ThreeReact/master/screen/screen.png)
-##
+<p align="center">
+  <img src="https://raw.githubusercontent.com/grischenko-v/ThreeReact/master/screen/screen.png?raw=true" alt="SCreen"/>
+</p>
+
 
 ## React JS + ThreeJS:
 - create react app
@@ -48,3 +50,5 @@ Cube.contextTypes = {
 
 export default Cube;
 ```
+
+
